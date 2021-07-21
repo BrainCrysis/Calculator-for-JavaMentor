@@ -35,10 +35,12 @@ public class RimlianDigitCheckerAndConvert {
 
     public String arabianDigitToRimlian(int aDigit) {
         int edinici = aDigit % 10;
+        int desastki = (aDigit / 10) % 10;
         if (aDigit == 10) {
             edinici = 10;
+            desastki = 0;
         }
-        int desastki = (aDigit / 10) % 10;
+
         if (aDigit == 100) {
             desastki = 10;
         }
